@@ -2,7 +2,7 @@
 node_modules
 /dist
 
-
+catatan-dwp-store.md
 # local env files
 .env.local
 .env.*.local

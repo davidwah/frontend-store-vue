@@ -5,6 +5,7 @@
     <ItemsVue/>
     <InstaVue/>
     <PartnerVue/>
+    <FooterVue/>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import CarouselVue from '@/components/Carousel.vue';
 import ItemsVue from '@/components/Items.vue';
 import InstaVue from '@/components/Insta.vue';
 import PartnerVue from '@/components/Partner.vue';
+import FooterVue from '@/components/Footer.vue';
 
 
 
@@ -26,6 +28,7 @@ export default {
     ItemsVue,
     InstaVue,
     PartnerVue,
+    FooterVue,
   }
 }
 </script>

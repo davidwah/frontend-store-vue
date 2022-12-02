@@ -4,6 +4,7 @@
     <CarouselVue/>
     <ItemsVue/>
     <InstaVue/>
+    <PartnerVue/>
   </div>
 </template>
 
@@ -13,6 +14,8 @@ import HeaderVue from '@/components/Header.vue';
 import CarouselVue from '@/components/Carousel.vue';
 import ItemsVue from '@/components/Items.vue';
 import InstaVue from '@/components/Insta.vue';
+import PartnerVue from '@/components/Partner.vue';
+
 
 
 export default {
@@ -21,7 +24,8 @@ export default {
     HeaderVue,
     CarouselVue,
     ItemsVue,
-    InstaVue
+    InstaVue,
+    PartnerVue,
   }
 }
 </script>

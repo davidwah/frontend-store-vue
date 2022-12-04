@@ -1,37 +1,24 @@
 <template>
-    <!-- Related Products Section End -->
-    <div class="related-products spad">
-        <div class="container">
+        <!-- Women Banner Section Begin -->
+        <section class="women-banner spad">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Related Products</h2>
-                    </div>
-                </div>
-            </div>
-            <carousel class="logo-carousel" :autoplay="true" :items="1" :loop="true" :mouseDrag="true" :nav="true"
-                :stagePadding="1" :wrap-around="true">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-5">
+                <div class="col-lg-12 mt-5">
+                    <carousel class="product-slider" :loop="true" :items="3" :nav="false" :mouseDrag="true" :autoplay="true">
                         <div class="product-item">
-                        <!-- <div class="product-item"> -->
-                            <div class="pi-pic tablecell-inner">
-                                <img src="img/products/product-8.jpg" alt />
+                            <div class="pi-pic">
+                                <img src="img/mickey1.jpg" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#">
-                                            <i class="icon_bag_alt"></i>
-                                        </a>
+                                        <a href="#"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view">
-                                        <router-link to="/product">+ Quick View</router-link>
-                                    </li>
+                                    <li class="quick-view"><a href="product.html">+ Quick View</a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Coat</div>
                                 <a href="#">
-                                    <h5>Pure Pineapple</h5>
+                                    <h5>Mickey Baggy</h5>
                                 </a>
                                 <div class="product-price">
                                     $14.00
@@ -39,71 +26,35 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-5">
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/women-1.jpg" alt />
+                                <!-- <img src="img/products/women-2.jpg" alt="" /> -->
+                                <img src="img/mickey2.jpg" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#">
-                                            <i class="icon_bag_alt"></i>
-                                        </a>
+                                        <a href="#"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view">
-                                        <router-link to="/product">+ Quick View</router-link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">Coat</div>
-                                <a href="#">
-                                    <h5>Pure Pineapple</h5>
-                                </a>
-                                <div class="product-price">
-                                    $14.00
-                                    <span>$35.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-5">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="img/products/women-2.jpg" alt />
-                                <ul>
-                                    <li class="w-icon active">
-                                        <a href="#">
-                                            <i class="icon_bag_alt"></i>
-                                        </a>
-                                    </li>
-                                    <li class="quick-view">
-                                        <a href="#">+ Quick View</a>
-                                    </li>
+                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Shoes</div>
                                 <a href="#">
-                                    <h5>Guangzhou sweater</h5>
+                                    <h5>Mickey Baggy Duos</h5>
                                 </a>
-                                <div class="product-price">$13.00</div>
+                                <div class="product-price">
+                                    $15.80
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-5">
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="img/products/women-3.jpg" alt />
+                                <img src="img/products/women-3.jpg" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#">
-                                            <i class="icon_bag_alt"></i>
-                                        </a>
+                                        <a href="#"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view">
-                                        <a href="#">+ Quick View</a>
-                                    </li>
+                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
@@ -111,18 +62,40 @@
                                 <a href="#">
                                     <h5>Pure Pineapple</h5>
                                 </a>
-                                <div class="product-price">$34.00</div>
+                                <div class="product-price">
+                                    $34.00
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
+                        <div class="product-item">
+                            <div class="pi-pic">
+                                <img src="img/products/women-4.jpg" alt="" />
+                                <ul>
+                                    <li class="w-icon active">
+                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                    </li>
+                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <li class="w-icon">
+                                        <a href="#"><i class="fa fa-random"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pi-text">
+                                <div class="catagory-name">Towel</div>
+                                <a href="#">
+                                    <h5>Converse Shoes</h5>
+                                </a>
+                                <div class="product-price">
+                                    $34.00
+                                </div>
+                            </div>
+                        </div>
+                    </carousel>
                 </div>
-            </carousel>
-
-
+            </div>
         </div>
-    </div>
-    <!-- Related Products Section End -->
+    </section>
+    <!-- Women Banner Section End -->
 </template>
   
 <script>
@@ -131,7 +104,18 @@ import carousel from "vue-owl-carousel";
 export default {
     name: "ItemsVue",
     components: {
-        carousel,
+        carousel
     },
+
 };
 </script>
+  
+<style scoped>
+.product-item {
+    margin-right: 20px;
+}
+
+.pi-pic img {
+    /* height: 450px; */
+}
+</style>

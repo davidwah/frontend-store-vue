@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-    <HeaderVue />
+    <HeaderVue/>
     <!-- Breadcrumb Section Begin -->
     <div class="breacrumb-section text-left">
       <div class="container">
@@ -24,24 +24,24 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="product-pic-zoom">
-                  <img class="product-big-img" :src="img_default" alt="" />
+                  <img class="product-big-img" :src="img_default" alt=""/>
                 </div>
                 <div class="product-thumbs">
-                  <carousel :loop="true"  :nav="false" :dots="false" class="product-thumbs-track ps-slider" >
-                    <div class="pt" @click="changeImage(thumbs[0])" :class="thumbs[0] == img_default ? 'active' : '' " >
-                      <img src="img/mickey1.jpg" alt="" />
+                  <carousel :loop="true" :nav="false" :dots="false" class="product-thumbs-track ps-slider">
+                    <div class="pt" @click="changeImage(thumbs[0])" :class="thumbs[0] == img_default ? 'active' : '' ">
+                      <img src="img/mickey1.jpg" alt=""/>
                     </div>
 
-                    <div class="pt" @click="changeImage(thumbs[1])" :class="thumbs[1] == img_default ? 'active' : '' " >
-                      <img src="img/mickey2.jpg" alt="" />
+                    <div class="pt" @click="changeImage(thumbs[1])" :class="thumbs[1] == img_default ? 'active' : '' ">
+                      <img src="img/mickey2.jpg" alt=""/>
                     </div>
 
-                    <div class="pt" @click="changeImage(thumbs[2])" :class="thumbs[2] == img_default ? 'active' : '' " >
-                      <img src="img/mickey3.jpg" alt="" />
+                    <div class="pt" @click="changeImage(thumbs[2])" :class="thumbs[2] == img_default ? 'active' : '' ">
+                      <img src="img/mickey3.jpg" alt=""/>
                     </div>
 
-                    <div class="pt" @click="changeImage(thumbs[3])" :class="thumbs[3] == img_default ? 'active' : '' " >
-                      <img src="img/mickey4.jpg" alt="" />
+                    <div class="pt" @click="changeImage(thumbs[3])" :class="thumbs[3] == img_default ? 'active' : '' ">
+                      <img src="img/mickey4.jpg" alt=""/>
                     </div>
                   </carousel>
                 </div>
@@ -73,7 +73,8 @@
                     <h4>$495.00</h4>
                   </div>
                   <div class="quantity">
-                    <a href="shopping-cart.html" class="primary-btn pd-cart">Add To Cart</a>
+                    <router-link to="/cart"><a href="shopping-cart.html" class="primary-btn pd-cart">Add To Cart</a>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -84,10 +85,10 @@
     </section>
     <!-- Product Shop Section End -->
     <ProductItems/>
-    <FooterVue />
+    <FooterVue/>
   </div>
 </template>
-  
+
 <script>
 // @ is an alias to /src
 import HeaderVue from '@/components/Header.vue';
@@ -104,7 +105,7 @@ export default {
     carousel,
     ProductItems,
   },
-  data(){
+  data() {
     return {
       img_default: "img/mickey2.jpg",
       thumbs: [
@@ -117,14 +118,14 @@ export default {
     }
   },
   methods: {
-    changeImage(urlImage){
+    changeImage(urlImage) {
       this.img_default = urlImage;
     },
 
   }
 }
 </script>
-  
+
 <style scoped>
 .product-thumbs .pt {
   margin-right: 12px;

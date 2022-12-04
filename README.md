@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Preview
+<img src="public/img/Screenshot_DWP-STORE.png" width="600" height="300">
+---

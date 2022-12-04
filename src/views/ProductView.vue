@@ -83,7 +83,7 @@
       </div>
     </section>
     <!-- Product Shop Section End -->
-    <ItemsVue/>
+    <ProductItems/>
     <FooterVue />
   </div>
 </template>
@@ -93,8 +93,7 @@
 import HeaderVue from '@/components/Header.vue';
 import FooterVue from '@/components/Footer.vue';
 import carousel from "vue-owl-carousel";
-import ItemsVue from "@/components/Items.vue";
-
+import ProductItems from "@/components/ProductItems";
 
 
 export default {
@@ -103,7 +102,7 @@ export default {
     HeaderVue,
     FooterVue,
     carousel,
-    ItemsVue,
+    ProductItems,
   },
   data(){
     return {
